@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1{
+  margin: 14px 0;
+}
+
+.square{
+  width: 100px;
+  height: 100px;
+
+  display: inline-block;
+
+  background-color: beige;
+  border: 1px solid gray;
+}
+
+.o{
+  position: relative;
+}
+
+.o::after{
+  content: "\1F6E1";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.x{
+  position: relative;
+}
+
+.x::after{
+  content: "\2694";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.restart{
+  margin-top: 10px;
+  padding: 10px;
+
+  background-color: rgb(94, 94, 255);
+  color: white;
+  cursor: pointer;
+}
+
+.restart:focus{
+  outline: none;
+}
